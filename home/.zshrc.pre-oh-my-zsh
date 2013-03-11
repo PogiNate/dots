@@ -1,0 +1,53 @@
+# Path to your oh-my-zsh configuration.  ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+ZSH_THEME="muse"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git brew ruby)
+
+source $ZSH/oh-my-zsh.sh
+
+# Maven Stuff
+export M2_HOME=/Users/natedickson/Maven
+export M2=$M2_HOME/bin
+export JAVA_HOME=/Library/Java/Home
+
+export EDITOR='vim'
+
+#source my alias file
+source $HOME/.alias
+
+# Awesome path edits.
+export PATH=$HOME/bin:$M2:/usr/local/share/npm/bin:/Users/natedickson/.rvm/gems/ruby-1.9.3-p327@markedblog/bin:/Users/natedickson/.rvm/gems/ruby-1.9.3-p327@global/bin:/Users/natedickson/.rvm/rubies/ruby-1.9.3-p327/bin:/Users/natedickson/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/natedickson/.rvm/bin:
+
+# load RVM
+source ~/.rvm/scripts/rvm
+
+# Uncomment following line if you want to disable autosetting terminal title.
+#DISABLE_AUTO_TITLE="true"
+
+source /usr/local/share/zsh/site-functions/git-flow-completion.zsh
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
+
+# Comment this out to disable bi-weekly auto-update checks
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+COMPLETION_WAITING_DOTS="true"
+# cd to the path of the front Finder window
+cdf() {
+	target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+	if [ "$target" != "" ]; then
+		cd "$target"; pwd
+	else
+		echo 'No Finder window found' >&2
+	fi
+}
+
