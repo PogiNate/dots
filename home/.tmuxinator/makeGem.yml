@@ -1,0 +1,13 @@
+# ~/.tmuxinator/makeGem.yml
+# you can make as many tabs as you wish...
+
+project_name: Fullstop
+project_root: ~/Projects/sandbox/fullstop
+tabs:
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim
+        - vim ~/todo.taskpaper
+        - irb
+  - git : git status
