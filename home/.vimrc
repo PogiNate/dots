@@ -12,3 +12,4 @@ colorscheme Tomorrow-Night-Eighties
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set guifont=Andale\ Mono:h14
