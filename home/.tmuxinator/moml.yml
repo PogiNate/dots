@@ -11,10 +11,10 @@ tabs:
       panes:
         - vim
         - vim ~/todo.taskpaper
-        - ls 
+        - ls
   - monitors:
       layout: main-horizontal
       panes:
-        - ls
+        - ranger
         - 'top -o cpu'
         - cd wam && ./wam.sh
