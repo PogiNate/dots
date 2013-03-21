@@ -1,0 +1,16 @@
+# ~/.tmuxinator/ndBlog.yml
+
+project_name: Natedickson_dot_com
+project_root: ~/Projects/Blogs/natedickson/octopress
+tabs:
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim
+        - #zsh at the project root. Useful for issuing rake commands.
+        - cd source/_posts #since I'll usually be editing posts, not pages. 
+  - monitor:
+      layout: even-horizontal
+      panes:
+        - rake preview
+        - top
