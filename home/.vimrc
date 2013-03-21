@@ -18,3 +18,5 @@ set linebreak
 set nolist
 set ttimeout
 set ttimeoutlen=10
+set autoindent
+filetype plugin indent on
