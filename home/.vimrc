@@ -13,3 +13,8 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set guifont=Andale\ Mono:h14
+set wrap
+set linebreak
+set nolist
+set ttimeout
+set ttimeoutlen=10
