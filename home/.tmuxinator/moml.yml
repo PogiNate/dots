@@ -10,7 +10,7 @@ tabs:
       layout: main-vertical
       panes:
         - vim
-        - vim ~/todo.taskpaper
+        - #why not have *TWO* command lines?
         - ls
   - monitors:
       layout: main-horizontal
