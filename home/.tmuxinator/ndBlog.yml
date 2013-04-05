@@ -6,7 +6,7 @@ tabs:
   - editor:
       layout: main-vertical
       panes:
-        - vim
+        - cd source/_posts #zsh has better autocomplete than vim, so I'll edit files directly now. 
         - #zsh at the project root. Useful for issuing rake commands.
         - cd source/_posts #since I'll usually be editing posts, not pages. 
   - monitor:
