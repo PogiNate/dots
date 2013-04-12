@@ -9,12 +9,12 @@ tabs:
   - editor:
       layout: main-vertical
       panes:
-        - vim
+        - 
         - #why not have *TWO* command lines?
         - ls
   - monitors:
       layout: main-horizontal
       panes:
         - ranger
-        - 'top -o cpu'
-        - cd wam && ./wam.sh
+        - 
+        - cd wam 
