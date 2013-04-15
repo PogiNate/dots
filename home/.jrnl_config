@@ -1,0 +1,15 @@
+{
+  "default_hour": 9, 
+  "timeformat": "%Y-%m-%d %H:%M", 
+  "linewrap": 80, 
+  "encrypt": false, 
+  "editor": "subl -w", 
+  "default_minute": 0, 
+  "highlight": true, 
+  "password": "", 
+  "journals": {
+    "default": "/Users/natedickson/Dropbox/Apps/Day One/Journal.dayone",
+    "work"   : "/Users/natedickson/journal.txt"
+  }, 
+  "tagsymbols": "@"
+}
