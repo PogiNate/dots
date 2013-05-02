@@ -5,7 +5,7 @@ syntax on
 let mapleader=","
 set incsearch
 set hlsearch
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l> 
 hi CursorLine 	cterm=NONE ctermbg=235 guibg=#262626 
 hi CursorColumn cterm=NONE ctermbg=235 guibg=#262626 
 nnoremap <Leader>c :set cursorline! <CR>
