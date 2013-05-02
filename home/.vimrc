@@ -1,3 +1,5 @@
+set nocompatible
+filetype off
 set nu
 syntax on
 let mapleader=","
@@ -22,3 +24,16 @@ set autoindent
 filetype plugin indent on
 
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
+
+" vundle settings
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+"We'll go ahead and let Vundle handle its own self.
+Bundle 'gmarik/vundle'
+
+"My Bundles below:
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
+Bundle 'tpope/vim-commentary'
+
+filetype plugin indent on
