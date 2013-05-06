@@ -24,7 +24,10 @@ set ttimeoutlen=10
 set autoindent
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
-
+"NERDTree Settings
+map <Leader>n  :NERDTreeToggle<CR>
+nmap <Leader>b :NERDTreeFromBookmark
+nmap <Leader>m :NERDTreeMirror<CR>
 "Trying out pathogen
 execute pathogen#infect()
 
