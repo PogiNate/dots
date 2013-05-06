@@ -1,10 +1,11 @@
 set nocompatible
-filetype off
+filetype plugin indent on 
 set nu
 syntax on
 let mapleader=","
 set incsearch
 set hlsearch
+nmap <Leader>t :TagbarToggle<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l> 
 hi CursorLine 	cterm=NONE ctermbg=235 guibg=#262626 
 hi CursorColumn cterm=NONE ctermbg=235 guibg=#262626 
@@ -21,19 +22,24 @@ set nolist
 set ttimeout
 set ttimeoutlen=10
 set autoindent
-filetype plugin indent on
 
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
+
+"Trying out pathogen
+execute pathogen#infect()
+
+
+" Switching to pathogen for now.
 " vundle settings
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set rtp+=~/.vim/bundle/vundle/
+" call vundle#rc()
 "We'll go ahead and let Vundle handle its own self.
-Bundle 'gmarik/vundle'
+" Bundle 'gmarik/vundle'
 
 "My Bundles below:
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
-Bundle 'tpope/vim-commentary'
+" Bundle 'rizzatti/funcoo.vim'
+" Bundle 'rizzatti/dash.vim'
+" Bundle 'tpope/vim-commentary'
 
 filetype plugin indent on
