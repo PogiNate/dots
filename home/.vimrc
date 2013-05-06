@@ -22,15 +22,22 @@ set nolist
 set ttimeout
 set ttimeoutlen=10
 set autoindent
-
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
 
 "Trying out pathogen
 execute pathogen#infect()
 
+let g:tagbar_type_xquery = {
+    \ 'ctagstype' : 'xquery',
+    \ 'kinds'     : [
+        \ 'f:function',
+        \ 'v:variable',
+        \ 'm:module',
+    \ ]
+    \ }
 
-" Switching to pathogen for now.
+" Dropping vundle for now
 " vundle settings
 " set rtp+=~/.vim/bundle/vundle/
 " call vundle#rc()
@@ -41,5 +48,3 @@ execute pathogen#infect()
 " Bundle 'rizzatti/funcoo.vim'
 " Bundle 'rizzatti/dash.vim'
 " Bundle 'tpope/vim-commentary'
-
-filetype plugin indent on
