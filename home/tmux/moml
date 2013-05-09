@@ -1,0 +1,11 @@
+tmux new-session -s MOML -n editor -d
+tmux send-keys -t MOML 'cd ~/Projects/moml' C-m
+tmux send-keys -t MOML 'vim' C-m
+tmux split-window -h -t MOML
+tmux send-keys -t MOML:1.2 'cd ~/Projects/moml' C-m
+tmux new-window -n ranger -t MOML
+tmux send-keys -t MOML:2 'cd ~/Projects/moml/wam' C-m
+tmux split-window -v -t MOML:2
+tmux send-keys -t MOML:2.2 'cd ~/Projects/moml/wam' C-m
+tmux select-window -t MOML:1
+tmux attach -t MOML
