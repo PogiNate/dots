@@ -1,0 +1,11 @@
+tmux new-session -s ND -n editor -d
+tmux send-keys -t ND "cd ~/Projects/Blogs/natedickson/octopress" C-m
+tmux split-window -h -p 30 -t ND
+tmux send-keys -t ND:1.2 "cd ~/Projects/Blogs/natedickson/octopress" C-m
+tmux new-window -n monitor -t ND
+tmux split-window -v -t ND:2
+tmux send-keys -t ND:2.1 "cd ~/Projects/Blogs/natedickson/octopress" C-m
+tmux send-keys -t ND:2.1 "rake preview" C-m
+tmux select-window -t ND:1
+tmux send-keys -t ND:2.2 "cd ~/Projects/Blogs/natedickson/octopress" C-m
+tmux attach -t ND
