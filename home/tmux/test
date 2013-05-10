@@ -1,3 +1,0 @@
-dir="~/Projects/Blogs/natedickson/octopress"
-
-echo "something in $dir"
