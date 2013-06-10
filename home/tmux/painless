@@ -1,0 +1,17 @@
+tmux has-session -t Painless
+if [[ $? != 0 ]]
+then
+    tmux new-session -s Painless -n Manuscript -d
+    tmux send-keys -t Painless "cd ~/Dropbox/painless_vim" C-m
+    tmux split-window -h -p 40 -t Painless
+    tmux send-keys -t Painless:1.2 "cd ~/Dropbox/painless_vim" C-m
+    tmux new-window -n Samples -t Painless
+    tmux split-window -v -t Painless:2 -p 40
+    tmux send-keys -t Painless:2.2 "cd ~/Projects/painless_samples" C-m
+    tmux send-keys -t Painless:2.2 "ranger" C-m
+    tmux send-keys -t Painless:2.1 "cd ~/Projects/painless_samples" C-m
+    tmux send-keys -t Painless:2.1 "git status" C-m
+    tmux select-window -t Painless:1
+fi
+tmux attach -t Painless
+
