@@ -23,6 +23,7 @@ set nolist
 set ttimeout
 set ttimeoutlen=10
 set autoindent
+set showmode
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
 "NERDTree Settings

@@ -1,14 +1,18 @@
-tmux new-session -s devTools -n editor -d
-tmux send-keys -t devTools "cd ~/Projects/devtools" C-m
-tmux split-window -h -p 30 -t devTools
-tmux send-keys -t devTools:1.2 "cd ~/Projects/devtools" C-m
-tmux new-window -n server -t devTools
-tmux split-window -v -t devTools:2
-tmux send-keys -t devTools:2.1 "cd ~/Projects/devtools" C-m
-tmux send-keys -t devTools:2.1 "ranger" C-m
-tmux send-keys -t devTools:2.2 "cd ~/Projects/devtools" C-m
-tmux send-keys -t devTools:2.2 "node app.js" C-m
-tmux send-keys -t devTools:1.1 "vim" C-m
-tmux send-keys -t devTools:1.1 ",n"
-tmux select-window -t devTools:1
+tmux has-session -t devTools
+if [[ $? != 0 ]]
+then
+  tmux new-session -s devTools -n editor -d
+  tmux send-keys -t devTools "cd ~/Projects/devtools" C-m
+  tmux split-window -h -p 30 -t devTools
+  tmux send-keys -t devTools:1.2 "cd ~/Projects/devtools" C-m
+  tmux new-window -n server -t devTools
+  tmux split-window -v -t devTools:2
+  tmux send-keys -t devTools:2.1 "cd ~/Projects/devtools" C-m
+  tmux send-keys -t devTools:2.1 "ranger" C-m
+  tmux send-keys -t devTools:2.2 "cd ~/Projects/devtools" C-m
+  tmux send-keys -t devTools:2.2 "node app.js" C-m
+  tmux send-keys -t devTools:1.1 "vim" C-m
+  tmux send-keys -t devTools:1.1 ",n"
+  tmux select-window -t devTools:1
+fi
 tmux attach -t devTools
