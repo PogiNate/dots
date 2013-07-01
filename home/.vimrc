@@ -7,6 +7,7 @@ set incsearch
 set hlsearch
 nmap <Leader>t :TagbarToggle<CR>
 nmap <slilent> <Leader>d <Plug>DashSearch
+nmap <Leader>g :Gstatus<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l> 
 hi CursorLine 	cterm=NONE ctermbg=235 guibg=#262626 
 hi CursorColumn cterm=NONE ctermbg=235 guibg=#262626 
