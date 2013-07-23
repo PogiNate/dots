@@ -1,6 +1,7 @@
 tmux has-session -t MOML
 if [[ $? != 0 ]]
 then
+  tmux detach
   tmux new-session -s MOML -n editor -d
   tmux send-keys -t MOML 'cd ~/Projects/moml' C-m
   tmux send-keys -t MOML 'vim' C-m

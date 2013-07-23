@@ -43,5 +43,10 @@ source $HOME/.alias
 export PATH=/Users/natedickson/tmux:/opt/local/bin:/opt/local/sbin:/Users/natedickson/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/share/npm/bin
 
 source ~/.rvm/scripts/rvm
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 rvm use default
+
+# if [[ "$TERM" != "screen-256color" ]]
+# then
+#   tmux attach-session -t "$USER" || tmux new-session -s "$USER"
+#   exit
+# fi

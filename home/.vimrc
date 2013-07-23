@@ -25,6 +25,9 @@ set ttimeout
 set ttimeoutlen=10
 set autoindent
 set showmode
+set foldmethod=indent
+set nofoldenable
+set foldlevel=1
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
 "NERDTree Settings
