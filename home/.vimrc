@@ -13,7 +13,8 @@ hi CursorLine 	cterm=NONE ctermbg=235 guibg=#262626
 hi CursorColumn cterm=NONE ctermbg=235 guibg=#262626 
 nnoremap <Leader>c :set cursorline! <CR>
 nnoremap <Leader>cl :set cursorcolumn! <CR>
-colorscheme Tomorrow-Night-Eighties
+" colorscheme Tomorrow-Night-Eighties
+colorscheme jellybeans
 set tabstop=2
 set shiftwidth=2
 set expandtab
