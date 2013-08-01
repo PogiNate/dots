@@ -12,7 +12,7 @@ then
   tmux send-keys -t MOML:2 'ranger' C-m
   tmux split-window -v -t MOML:2
   tmux send-keys -t MOML:2.2 'cd ~/Projects/moml/wam' C-m
-  tmux new-window -n SSH -t MOML
+  tmux new-window -n Spare -t MOML
   tmux select-window -t MOML:1
 fi
 tmux attach -t MOML
