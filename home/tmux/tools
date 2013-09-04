@@ -9,8 +9,8 @@ then
   tmux split-window -v -t tools:2
   tmux send-keys -t tools:2.1 "cd ~/Projects/tools" C-m
   tmux send-keys -t tools:2.1 "ranger" C-m
-  tmux send-keys -t tools:2.2 "cd ~/Projects/tools" C-m
-  tmux send-keys -t tools:2.2 "node app.js" C-m
+  tmux send-keys -t tools:2.2 "cd ~/Projects/tools/built" C-m
+  tmux send-keys -t tools:2.2 "hts" C-m
   tmux send-keys -t tools:1.1 "vim" C-m
   tmux send-keys -t tools:1.1 ",n"
   tmux select-window -t tools:1

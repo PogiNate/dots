@@ -13,7 +13,6 @@ hi CursorLine 	cterm=NONE ctermbg=235 guibg=#262626
 hi CursorColumn cterm=NONE ctermbg=235 guibg=#262626 
 nnoremap <Leader>c :set cursorline! <CR>
 nnoremap <Leader>cl :set cursorcolumn! <CR>
-" colorscheme Tomorrow-Night-Eighties
 colorscheme jellybeans
 set tabstop=2
 set shiftwidth=2
@@ -29,14 +28,23 @@ set showmode
 set foldmethod=indent
 set nofoldenable
 set foldlevel=1
+
+"Backspace settings
+set backspace=2
+set backspace=indent,eol,start
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
 "NERDTree Settings
 map <Leader>n  :NERDTreeToggle<CR>
 nmap <Leader>b :NERDTreeFromBookmark
 nmap <Leader>mi :NERDTreeMirror<CR>
+
 "Trying out pathogen
 execute pathogen#infect()
+
+"Persistent undo settings
+set undofile
+set undodir = "/Users/natedickson/.vim/undofiles/"
 
 let g:tagbar_type_xquery = {
     \ 'ctagstype' : 'xquery',
