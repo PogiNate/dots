@@ -9,6 +9,7 @@ nmap <Leader>t :TagbarToggle<CR>
 nmap <slilent> <Leader>d <Plug>DashSearch
 nmap <Leader>g :Gstatus<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l> 
+nnoremap <F5> :GundoToggle<CR>
 hi CursorLine 	cterm=NONE ctermbg=235 guibg=#262626 
 hi CursorColumn cterm=NONE ctermbg=235 guibg=#262626 
 nnoremap <Leader>c :set cursorline! <CR>
