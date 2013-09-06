@@ -26,8 +26,8 @@ set ttimeout
 set ttimeoutlen=10
 set autoindent
 set showmode
-set foldmethod=indent
-set nofoldenable
+set foldmethod=syntax
+"set nofoldenable
 set foldlevel=1
 
 "Backspace settings
@@ -45,7 +45,7 @@ execute pathogen#infect()
 
 "Persistent undo settings
 set undofile
-set undodir = "/Users/natedickson/.vim/undofiles/"
+set undodir="/Users/natedickson/.vim/undofiles/"
 
 let g:tagbar_type_xquery = {
     \ 'ctagstype' : 'xquery',
