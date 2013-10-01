@@ -20,6 +20,9 @@ set ttimeoutlen=10
 set autoindent
 set showmode
 
+"Language specific 
+autocmd FileType xquery set commentstring=\(:%s:\)
+
 "New Keymaps
 nmap <slilent> <Leader>d <Plug>DashSearch
 nmap <Leader>t :TagbarToggle<CR>
@@ -31,7 +34,7 @@ nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 nnoremap <F5> :GundoToggle<CR>
 
 "Folding
-set foldmethod=indent
+set foldmethod=manual
 set foldlevel=1
 
 "Statusline

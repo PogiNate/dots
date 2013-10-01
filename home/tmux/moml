@@ -13,6 +13,7 @@ then
   tmux split-window -v -t MOML:2
   tmux send-keys -t MOML:2.2 'cd ~/Projects/moml/wam' C-m
   tmux new-window -n Spare -t MOML
+  tmux send-keys -t MOML:3 'cd ~/Projects/moml' C-m
   tmux select-window -t MOML:1
 fi
 tmux attach -t MOML
