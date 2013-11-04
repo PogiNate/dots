@@ -42,11 +42,9 @@ source $HOME/.alias
 # Customize to your needs...
 export PATH=/Users/natedickson/tmux:/opt/local/bin:/opt/local/sbin:/Users/natedickson/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/share/npm/bin
 
+# Java stuff. Ugh.
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
+
 source ~/.rvm/scripts/rvm
 rvm use default
 
-# if [[ "$TERM" != "screen-256color" ]]
-# then
-#   tmux attach-session -t "$USER" || tmux new-session -s "$USER"
-#   exit
-# fi

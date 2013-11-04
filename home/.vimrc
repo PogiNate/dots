@@ -1,4 +1,4 @@
-set nocompatible
+set nocompatible "Use Vim as VIM, not as vi
 colorscheme jellybeans
 filetype plugin indent on 
 set nu
