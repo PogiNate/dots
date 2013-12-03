@@ -44,18 +44,23 @@ set laststatus=2
 set backspace=2
 set backspace=indent,eol,start
 
+"Wildignore stuff
+
+set wildignore=node_modules/*
 "NERDTree Settings
+let NERDTreeHijackNetrw=1
 map <Leader>n  :NERDTreeToggle<CR>
 nmap <Leader>b :NERDTreeFromBookmark
 nmap <Leader>mi :NERDTreeMirror<CR>
 
-"Trying out pathogen
+"Pathogen
 execute pathogen#infect()
 
 "Persistent undo settings
 set undofile
 set undodir="/Users/natedickson/.vim/undofiles/"
 
+"XQuery specific stuff
 let g:tagbar_type_xquery = {
     \ 'ctagstype' : 'xquery',
     \ 'kinds'     : [
@@ -64,27 +69,4 @@ let g:tagbar_type_xquery = {
         \ 'm:module',
     \ ]
     \ }
-
-"Selecta as a Fuzzy file finder!
-" Run a given vim command on the results of fuzzy selecting from a given shell
-" " command. See usage below.
-function! SelectaCommand(choice_command, selecta_args, vim_command)
-  try
-    silent let selection = system(a:choice_command . " | selecta " .a:selecta_args)
-  catch /Vim:Interrupt/
-    " Swallow the ^C so that the redraw below happens; otherwise
-    "there will be
-    " leftovers from selecta on the screen
-    redraw!
-    return
-  endtry
-  redraw!
-  exec a:vim_command . " " . selection
-  endfunction
-
-" Find all files in all non-dot directories
-" starting in the working directory.
-" Fuzzy select one of those. Open the selected
-" file with :e.
-nnoremap <leader>f :call SelectaCommand("find * -type f", "", ":e")<cr>
 
