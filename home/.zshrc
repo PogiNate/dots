@@ -9,7 +9,7 @@ ZSH_THEME="miloshadzic"
 # ZSH_THEME="muse"
 
 export EDITOR='vim'
-export SHELL='/usr/local/Cellar/zsh/5.0.2/bin/zsh'
+export SHELL='/usr/local/Cellar/zsh/5.0.5/bin/zsh'
 
 
 #Set to this to use case-sensitive completion

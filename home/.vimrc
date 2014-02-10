@@ -24,14 +24,14 @@ autocmd FileType xquery set commentstring=\(:%s:\)
 
 "New Keymaps
 nmap <slilent> <Leader>d <Plug>DashSearch
-nmap <Leader>t :TagbarToggle<CR>
+nmap <Leader>t :tabe<CR>
 nmap <Leader>g :Gstatus<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l> 
 nnoremap <Leader>c :set cursorline! <CR>
 nnoremap <Leader>cl :set cursorcolumn! <CR>
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 nnoremap <F5> :GundoToggle<CR>
-
+nnoremap <C-t> :tabe<CR>
 "Folding
 set foldmethod=manual
 set foldlevel=1
