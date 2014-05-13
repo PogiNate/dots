@@ -5,8 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="miloshadzic"
-# ZSH_THEME="muse"
+# ZSH_THEME="miloshadzic"
+ZSH_THEME="pure"
 
 export EDITOR='vim'
 export SHELL='/usr/local/Cellar/zsh/5.0.5/bin/zsh'
@@ -39,6 +39,9 @@ source $ZSH/oh-my-zsh.sh
 #source my alias file
 source $HOME/.alias
 
+#source functions
+source $HOME/.functions
+
 # Customize to your needs...
 export PATH=/Users/natedickson/tmux:/opt/local/bin:/opt/local/sbin:/Users/natedickson/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/share/npm/bin
 
@@ -48,3 +51,6 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 source ~/.rvm/scripts/rvm
 rvm use default
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

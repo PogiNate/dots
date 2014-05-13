@@ -19,6 +19,9 @@ set ttimeoutlen=10
 set autoindent
 set showmode
 
+"Save all files when vim loses focus
+autocmd BufLeave,FocusLost * silent! wall
+
 "Language specific 
 autocmd FileType xquery set commentstring=\(:%s:\)
 
@@ -30,8 +33,10 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <Leader>c :set cursorline! <CR>
 nnoremap <Leader>cl :set cursorcolumn! <CR>
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
+nnoremap <leader>b :Gblame<CR>
 nnoremap <F5> :GundoToggle<CR>
-nnoremap <C-t> :tabe<CR>
+nnoremap <F6> :TagbarToggle<CR>
+
 "Folding
 set foldmethod=manual
 set foldlevel=1
@@ -50,7 +55,7 @@ set wildignore=node_modules/*
 "NERDTree Settings
 let NERDTreeHijackNetrw=1
 map <Leader>n  :NERDTreeToggle<CR>
-nmap <Leader>b :NERDTreeFromBookmark
+" nmap <Leader>b :NERDTreeFromBookmark
 nmap <Leader>mi :NERDTreeMirror<CR>
 
 "Pathogen
