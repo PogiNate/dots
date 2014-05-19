@@ -36,6 +36,7 @@ nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 nnoremap <leader>b :Gblame<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F6> :TagbarToggle<CR>
+nnoremap <F7> :set wrap!<CR>:set linebreak!<CR>
 
 "Folding
 set foldmethod=manual
