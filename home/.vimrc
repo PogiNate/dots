@@ -22,21 +22,28 @@ set showmode
 "Save all files when vim loses focus
 autocmd BufLeave,FocusLost * silent! wall
 
-"Language specific 
-autocmd FileType xquery set commentstring=\(:%s:\)
-
 "New Keymaps
 nmap <slilent> <Leader>d <Plug>DashSearch
 nmap <Leader>t :tabe<CR>
 nmap <Leader>g :Gstatus<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l> 
-nnoremap <Leader>c :set cursorline! <CR>
-nnoremap <Leader>cl :set cursorcolumn! <CR>
+nnoremap <silent> <Leader>c :set cursorline! <CR>
+nnoremap <silent> <Leader>cl :set cursorcolumn! <CR>
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 nnoremap <leader>b :Gblame<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F6> :TagbarToggle<CR>
-nnoremap <F7> :set wrap!<CR>:set linebreak!<CR>
+nnoremap <F7> :set wrap!<CR>
+
+"Tabularize Shortcuts
+if exists(":Tabularize")
+nmap <leader>a= :Tabularize /=<CR>
+vmap <leader>a= :Tabularize /=<CR>
+nmap <leader>a: :Tabularize /:<CR>
+vmap <leader>a: :Tabularize /:<CR>
+vmap <leader>at :Tabularize /\|<CR>
+nmap <leader>at :Tabularize /\|<CR>
+endif
 
 "Folding
 set foldmethod=manual
@@ -67,6 +74,8 @@ set undofile
 set undodir="/Users/natedickson/.vim/undofiles/"
 
 "XQuery specific stuff
+autocmd FileType xquery set commentstring=\(:%s:\)
+
 let g:tagbar_type_xquery = {
     \ 'ctagstype' : 'xquery',
     \ 'kinds'     : [
