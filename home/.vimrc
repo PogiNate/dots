@@ -87,7 +87,9 @@ execute pathogen#infect()
 
 "Persistent undo settings
 set undofile
-set undodir=~/.vim/undodir
+set undodir=~/.vim/undofiles
+set undolevels=1000
+set undoreload=10000
 
 "XQuery specific stuff
 autocmd FileType xquery set commentstring=\(:%s:\)
