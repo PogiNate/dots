@@ -16,6 +16,7 @@ then
   tmux send-keys -t MOML:2.2 './wam.sh'
   tmux new-window -n Spare -t MOML
   tmux send-keys -t MOML:3 'cd ~/Projects/moml' C-m
+  tmux send-keys -t MOML:3 'brewup' C-m
   tmux select-window -t MOML:1
 fi
 tmux attach -t MOML

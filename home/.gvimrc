@@ -1,2 +1,2 @@
-set guifont=Source\ Code\ Pro:h14
+set guifont=Source\ Code\ Pro:h16
 

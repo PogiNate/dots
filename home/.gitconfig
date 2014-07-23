@@ -27,3 +27,5 @@
 	prompt = false
 [merge]
 	tool = Kaleidoscope
+[url "https://"]
+	insteadOf = git://

@@ -4,6 +4,7 @@ filetype plugin indent on
 set nu
 syntax on
 let mapleader=","
+let maplocalleader = "\\"
 set incsearch
 set hlsearch
 hi CursorLine 	cterm=NONE ctermbg=235 guibg=#262626 
@@ -18,31 +19,46 @@ set ttimeout
 set ttimeoutlen=10
 set autoindent
 set showmode
+set shiftround
 
 "Save all files when vim loses focus
-autocmd BufLeave,FocusLost * silent! wall
+augroup autoSave
+  autocmd!
+  autocmd CursorHold,BufLeave,FocusLost * silent! wall
+augroup END
 
-"New Keymaps
-nmap <slilent> <Leader>d <Plug>DashSearch
-nmap <Leader>t :tabe<CR>
-nmap <Leader>g :Gstatus<CR>
+" New Keymaps
+
+" Normal Mode
+
+nnoremap - ddp
+nnoremap _ ddkkp
+nnoremap <Leader>t :tabe<CR>
+nnoremap <Leader>g :Gstatus<CR>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l> 
-nnoremap <silent> <Leader>c :set cursorline! <CR>
-nnoremap <silent> <Leader>cl :set cursorcolumn! <CR>
+nnoremap <silent> <Leader>l :set cursorline! <CR>
+nnoremap <silent> <Leader>c :set cursorcolumn! <CR>
 nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 nnoremap <leader>b :Gblame<CR>
+nnoremap <silent> <leader>sv :so $MYVIMRC<CR> :echom ".vimrc reloaded."<CR>
+nnoremap <silent> <leader>ev :split $MYVIMRC<CR>
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F6> :TagbarToggle<CR>
 nnoremap <F7> :set wrap!<CR>
+nnoremap <c-u> <esc>viwU
+
+" Insert Mode
+inoremap <c-u> <esc>viwUi
+inoremap jk <esc>
 
 "Tabularize Shortcuts
 if exists(":Tabularize")
-nmap <leader>a= :Tabularize /=<CR>
-vmap <leader>a= :Tabularize /=<CR>
-nmap <leader>a: :Tabularize /:<CR>
-vmap <leader>a: :Tabularize /:<CR>
-vmap <leader>at :Tabularize /\|<CR>
-nmap <leader>at :Tabularize /\|<CR>
+nnoremap <leader>a= :Tabularize /=<CR>
+vnoremap <leader>a= :Tabularize /=<CR>
+nnoremap <leader>a: :Tabularize /:<CR>
+vnoremap <leader>a: :Tabularize /:<CR>
+vnoremap <leader>at :Tabularize /\|<CR>
+nnoremap <leader>at :Tabularize /\|<CR>
 endif
 
 "Folding
@@ -71,7 +87,7 @@ execute pathogen#infect()
 
 "Persistent undo settings
 set undofile
-set undodir="/Users/natedickson/.vim/undofiles/"
+set undodir=~/.vim/undodir
 
 "XQuery specific stuff
 autocmd FileType xquery set commentstring=\(:%s:\)
