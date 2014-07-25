@@ -20,6 +20,7 @@ set ttimeoutlen=10
 set autoindent
 set showmode
 set shiftround
+let g:airline_powerline_fonts = 1
 
 "Save all files when vim loses focus
 augroup autoSave
@@ -102,4 +103,3 @@ let g:tagbar_type_xquery = {
         \ 'm:module',
     \ ]
     \ }
-

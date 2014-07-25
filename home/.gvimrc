@@ -1,2 +1,2 @@
-set guifont=Source\ Code\ Pro:h16
+set guifont=Source\ Code\ Pro\ for\ Powerline:h16
 
