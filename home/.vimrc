@@ -1,14 +1,14 @@
 set nocompatible "Use Vim as VIM, not as vi
 colorscheme jellybeans
-filetype plugin indent on 
+filetype plugin indent on
 set nu
 syntax on
 let mapleader=","
 let maplocalleader = "\\"
 set incsearch
 set hlsearch
-hi CursorLine 	cterm=NONE ctermbg=235 guibg=#262626 
-hi CursorColumn cterm=NONE ctermbg=235 guibg=#262626 
+hi CursorLine 	cterm=NONE ctermbg=235 guibg=#262626
+hi CursorColumn cterm=NONE ctermbg=235 guibg=#262626
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -36,18 +36,17 @@ nnoremap - ddp
 nnoremap _ ddkkp
 nnoremap <Leader>t :tabe<CR>
 nnoremap <Leader>g :Gstatus<CR>
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l> 
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <silent> <Leader>l :set cursorline! <CR>
 nnoremap <silent> <Leader>c :set cursorcolumn! <CR>
-nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
-nnoremap <leader>b :Gblame<CR>
+nnoremap <silent> <leader>b :Gblame<CR>
 nnoremap <silent> <leader>sv :so $MYVIMRC<CR> :echom ".vimrc reloaded."<CR>
 nnoremap <silent> <leader>ev :split $MYVIMRC<CR>
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <silent> <F5> :GundoToggle<CR>
 nnoremap <F6> :TagbarToggle<CR>
 nnoremap <F7> :set wrap!<CR>
 nnoremap <c-u> <esc>viwU
-
+nnoremap <silent> <leader>sw :%s/\s\+$//<CR>
 " Insert Mode
 inoremap <c-u> <esc>viwUi
 inoremap jk <esc>
@@ -67,7 +66,7 @@ set foldmethod=manual
 set foldlevel=1
 
 "Statusline
-set statusline=%t%m\ %r\ %=col:%c\ ln:%l\ lines:%L[%P]%h\ buffer:%n\ \ 
+set statusline=%t%m\ %r\ %=col:%c\ ln:%l\ lines:%L[%P]%h\ buffer:%n\ \
 set laststatus=2
 
 "Backspace settings
