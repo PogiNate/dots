@@ -20,6 +20,7 @@ set ttimeoutlen=10
 set autoindent
 set showmode
 set shiftround
+set pastetoggle =<F2>
 let g:airline_powerline_fonts = 1
 
 "Save all files when vim loses focus
@@ -29,14 +30,20 @@ augroup autoSave
 augroup END
 
 " New Keymaps
-
+" Easily move between windows
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+" Easily move between tabs
+nnoremap H gT
+nnoremap L gt
 " Normal Mode
-
 nnoremap - ddp
 nnoremap _ ddkkp
 nnoremap <Leader>t :tabe<CR>
 nnoremap <Leader>g :Gstatus<CR>
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+nnoremap <silent> <leader>s :<C-u>nohlsearch<CR>
 nnoremap <silent> <Leader>l :set cursorline! <CR>
 nnoremap <silent> <Leader>c :set cursorcolumn! <CR>
 nnoremap <silent> <leader>b :Gblame<CR>

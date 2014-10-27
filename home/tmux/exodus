@@ -1,0 +1,21 @@
+tmux has-session -t Exodus
+if [[ $? != 0 ]]
+then
+  tmux new-session -s Exodus -n editor -d
+  tmux send-keys -t Exodus "cd ~/Projects/Boncom/mo-exodus" C-m
+  tmux split-window -h -p 30 -t Exodus
+  tmux send-keys -t Exodus:1.2 "cd ~/Projects/Boncom/mo-exodus" C-m
+  tmux send-keys -t Exodus:1.1 "vim" C-m
+  tmux new-window -n Server -t Exodus
+  tmux split-window -v -t Exodus:2
+  tmux split-window -h -t Exodus:2.1
+  tmux send-keys -t Exodus:2.1 "cd ~/Projects/Boncom/mo-exodus" C-m
+  tmux send-keys -t Exodus:2.2 "cd ~/Projects/Boncom/mo-exodus" C-m
+  tmux send-keys -t Exodus:2.3 "cd ~/Projects/Boncom/mo-exodus" C-m
+  tmux send-keys -t Exodus:2.1 "ranger" C-m
+  tmux send-keys -t Exodus:2.2 "php -S localhost:7778" C-m
+  tmux send-keys -t Exodus:2.3 "git status" C-m
+  tmux select-window -t Exodus:1
+fi
+tmux attach -t Exodus
+

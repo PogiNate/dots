@@ -9,7 +9,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="pure"
 
 export EDITOR='vim'
-export SHELL='/usr/local/Cellar/zsh/5.0.5/bin/zsh'
+export SHELL='/usr/local/Cellar/zsh/5.0.7/bin/zsh'
 
 
 #Set to this to use case-sensitive completion
@@ -33,7 +33,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew ruby)
+plugins=(git brew ruby marked2)
 
 source $ZSH/oh-my-zsh.sh
 #source my alias file
