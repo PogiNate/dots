@@ -49,6 +49,8 @@ nnoremap <silent> <Leader>c :set cursorcolumn! <CR>
 nnoremap <silent> <leader>b :Gblame<CR>
 nnoremap <silent> <leader>sv :so $MYVIMRC<CR> :echom ".vimrc reloaded."<CR>
 nnoremap <silent> <leader>ev :split $MYVIMRC<CR>
+"Using :noremap doesn't work with plug mappings. Who knew?
+nmap <silent> <leader>d <Plug>DashSearch
 nnoremap <silent> <F5> :GundoToggle<CR>
 nnoremap <F6> :TagbarToggle<CR>
 nnoremap <F7> :set wrap!<CR>

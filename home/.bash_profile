@@ -8,3 +8,7 @@ export LSCOLORS=gxfxcxdxHxegedabagacad
 export PS1="\[$(tput setaf 4)\][\u \[$(tput setaf 7)\]\w\[$(tput setaf 4)\]]\[$(tput setaf 4)\]$ \[$(tput sgr0)\]"
 
 source ~/.alias
+
+export PATH=/Users/natedickson/bin/Sencha/Cmd/4.0.4.84:$PATH
+
+export SENCHA_CMD_3_0_0="/Users/natedickson/bin/Sencha/Cmd/4.0.4.84"

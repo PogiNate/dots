@@ -43,14 +43,17 @@ source $HOME/.alias
 source $HOME/.functions
 
 # Customize to your needs...
-export PATH=/Users/natedickson/tmux:/opt/local/bin:/opt/local/sbin:/Users/natedickson/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/share/npm/bin
+export PATH=/Users/natedickson/tmux:/opt/local/bin:/opt/local/sbin:/Users/natedickson/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/Users/natedickson/bin/Sencha/Cmd/4.0.4.84:
 
 # Java stuff. Ugh.
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
-
+export CATALINA_HOME=/Users/natedickson/bin/tomcat
 source ~/.rvm/scripts/rvm
 rvm use default
 
+
+# Secha stuff. Hopefully we'll get rid of this soon.
+export SENCHA_CMD_3_0_0="/Users/natedickson/bin/Sencha/Cmd/4.0.4.84"
 
 ### Added by the Heroku Toolbelt
 #export PATH="/usr/local/heroku/bin:$PATH"
