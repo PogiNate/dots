@@ -1,0 +1,13 @@
+tmux has-session -t Glowy
+if [[ $? != 0 ]]
+then
+
+  cd ~/Projects/Glowy
+  tmux new-session -s Glowy -n editor -d
+  tmux send-keys -t Glowy:1.1 "vim" C-m
+  tmux split-window -h -p 30 -t Glowy
+  tmux new-window -n monitor -t Glowy
+  tmux split-window -v -t Glowy:2
+  tmux select-window -t Glowy:1
+fi
+tmux attach -t Glowy
