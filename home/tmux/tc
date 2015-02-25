@@ -12,7 +12,8 @@ then
   tmux split-window -h -t TC:2.1 -p 30
   tmux send-keys -t TC:2.1 'ranger' C-m
   tmux send-keys -t TC:2.3 'git status' C-m
-  tmux send-keys -t TC:2.2 'sudo something goes here'
+  tmux send-keys -t TC:2.2 'cd ~/bin/tomcat/bin' C-m
+  tmux send-keys -t TC:2.2 'sudo ./catalina.sh start'
   tmux new-window -n Scratch -t TC
   tmux send-keys -t TC:3 'brewup' C-m
   tmux select-window -t TC:1

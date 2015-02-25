@@ -11,6 +11,11 @@ ZSH_THEME="pure"
 export EDITOR='vim'
 export SHELL='/usr/local/Cellar/zsh/5.0.7/bin/zsh'
 
+bindkey -v
+
+##History Settings
+setopt INC_APPEND_HISTORY
+setopt HIST_REDUCE_BLANKS
 
 #Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -33,7 +38,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew ruby marked2)
+plugins=(git brew ruby marked2 mvn)
 
 source $ZSH/oh-my-zsh.sh
 #source my alias file
@@ -46,14 +51,13 @@ source $HOME/.functions
 export PATH=/Users/natedickson/tmux:/opt/local/bin:/opt/local/sbin:/Users/natedickson/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/Users/natedickson/bin/Sencha/Cmd/4.0.4.84:
 
 # Java stuff. Ugh.
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
 export CATALINA_HOME=/Users/natedickson/bin/tomcat
 source ~/.rvm/scripts/rvm
 rvm use default
 
 
 # Secha stuff. Hopefully we'll get rid of this soon.
-export SENCHA_CMD_3_0_0="/Users/natedickson/bin/Sencha/Cmd/4.0.4.84"
+export SENCHA_CMD_3_0_0="/Users/natedickson/bin/Sencha/Cmd/4.0.0.203"
 
-### Added by the Heroku Toolbelt
-#export PATH="/usr/local/heroku/bin:$PATH"
+export PATH=/Users/natedickson/bin/Sencha/Cmd/4.0.0.203:$PATH

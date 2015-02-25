@@ -11,4 +11,6 @@ source ~/.alias
 
 export PATH=/Users/natedickson/bin/Sencha/Cmd/4.0.4.84:$PATH
 
-export SENCHA_CMD_3_0_0="/Users/natedickson/bin/Sencha/Cmd/4.0.4.84"
+export SENCHA_CMD_3_0_0="/Users/natedickson/bin/Sencha/Cmd/4.0.0.203"
+
+export PATH=/Users/natedickson/bin/Sencha/Cmd/4.0.0.203:$PATH
