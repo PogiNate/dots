@@ -1,0 +1,15 @@
+#! /usr/bin/env sh
+tmux has-session -t IntelliTmux
+
+if [[ $? != 0 ]]
+then
+  cd ~/Projects/mtc-teaching-center
+  tmux detach
+  tmux new-session -s IntelliTmux -n Grunt -d
+  tmux send-keys -t IntelliTmux 'cd scripts && grunt' C-m
+  tmux split-window -h -t IntelliTmux 
+  tmux new-window -n git -t IntelliTmux
+  tmux send-keys -t IntelliTmux:2 'git status' C-m
+fi
+tmux attach -t IntelliTmux
+
