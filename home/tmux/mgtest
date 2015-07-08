@@ -1,0 +1,18 @@
+#! /usr/bin/env sh
+tmux has-session -t mgTest
+
+if [[ $? != 0 ]]
+then
+  cd ~/Projects/sandbox/mgTest
+  tmux detach
+  tmux new-session -s mgTest -n editor -d
+  tmux send-keys -t mgTest 'vim' C-m
+  tmux split-window -h -t mgTest -p 30
+  tmux new-window -n Heroku -t mgTest
+  tmux split-window -t mgTest:2 -p 40
+  tmux send-keys -t mgTest:2.1 'heroku logs' C-m
+  tmux send-keys -t mgTest:2.2 'foreman start' C-m
+  tmux new-window -n Scratch -t mgTest
+  tmux select-window -t mgTest:1
+fi
+tmux attach -t mgTest

@@ -61,3 +61,5 @@ rvm use default
 export SENCHA_CMD_3_0_0="/Users/natedickson/bin/Sencha/Cmd/4.0.0.203"
 
 export PATH=/Users/natedickson/bin/Sencha/Cmd/4.0.0.203:$PATH
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
