@@ -2,14 +2,14 @@
 	name = Nate Dickson
 	email = natedickson@ldschurch.org
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/natedickson/.gitignore_global
 	editor = vim
 	autocrlf = input
 [difftool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/DeltaWalker.app/Contents/MacOS/Deltawalker \"$REMOTE\" \"$LOCAL\" -mi -pwd=\"`pwd`\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	cmd = /Applications/DeltaWalker.app/Contents/MacOS/Deltawalker \"$LOCAL\" \"$REMOTE\" \"$BASE\" -merged=\"$MERGED\" -mi -pwd=\"`pwd`\"
 	trustExitCode = true
 [push]
 	default = current
