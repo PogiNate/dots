@@ -1,65 +1,65 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/natedickson/.oh-my-zsh
 
-#Set name of the theme to load.
+# Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="miloshadzic"
 ZSH_THEME="pure"
 
-export EDITOR='vim'
-export SHELL='/usr/local/Cellar/zsh/5.0.7/bin/zsh'
-
-bindkey -v
-
-##History Settings
-setopt INC_APPEND_HISTORY
-setopt HIST_REDUCE_BLANKS
-
-#Set to this to use case-sensitive completion
+# Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Comment this out to disable bi-weekly auto-update checks
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
-# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
+# Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
 
-# Uncomment following line if you want to disable colors in ls
+# Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
-# Uncomment following line if you want to disable autosetting terminal title.
+# Uncomment the following line to disable auto-setting terminal title.
 DISABLE_AUTO_TITLE="true"
 
-# Uncomment following line if you want red dots to be displayed while waiting for completion
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew ruby marked2 mvn)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(marked git)
 
+
+# User configuration
+
+export PATH="/Users/natedickson/bin/Sencha/Cmd/4.0.0.203:/Users/natedickson/tmux:/opt/local/bin:/opt/local/sbin:/Users/natedickson/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/Users/natedickson/bin/Sencha/Cmd/4.0.4.84::/Users/natedickson/.rvm/bin:/Users/natedickson/.rvm/bin"
+export MANPATH="/usr/local/man:$MANPATH"
 source $ZSH/oh-my-zsh.sh
-#source my alias file
-source $HOME/.alias
-
-#source functions
-source $HOME/.functions
-
-# Customize to your needs...
-export PATH=/Users/natedickson/tmux:/opt/local/bin:/opt/local/sbin:/Users/natedickson/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/Users/natedickson/bin/Sencha/Cmd/4.0.4.84:
-
-# Java stuff. Ugh.
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
-export CATALINA_HOME=/Users/natedickson/bin/tomcat
-source ~/.rvm/scripts/rvm
-rvm use default
-
-
-# Secha stuff. Hopefully we'll get rid of this soon.
-export SENCHA_CMD_3_0_0="/Users/natedickson/bin/Sencha/Cmd/4.0.0.203"
-
-export PATH=/Users/natedickson/bin/Sencha/Cmd/4.0.0.203:$PATH
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+source ~/.alias
+#Java Stuff
+export M2_HOME=/usr/local/Cellar/maven/3.3.3/libexec
+export M2=$M2_HOME/bin
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
+export PATH=$PATH:$JAVA_HOME:$M2

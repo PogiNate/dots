@@ -99,15 +99,3 @@ set undofile
 set undodir=~/.vim/undofiles
 set undolevels=1000
 set undoreload=10000
-
-"XQuery specific stuff
-autocmd FileType xquery set commentstring=\(:%s:\)
-
-let g:tagbar_type_xquery = {
-    \ 'ctagstype' : 'xquery',
-    \ 'kinds'     : [
-        \ 'f:function',
-        \ 'v:variable',
-        \ 'm:module',
-    \ ]
-    \ }
