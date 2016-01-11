@@ -49,12 +49,11 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(marked git)
-
+plugins=(marked git tmux)
 
 # User configuration
 
-export PATH="/Users/natedickson/bin/Sencha/Cmd/4.0.0.203:/Users/natedickson/tmux:/opt/local/bin:/opt/local/sbin:/Users/natedickson/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/Users/natedickson/bin/Sencha/Cmd/4.0.4.84::/Users/natedickson/.rvm/bin:/Users/natedickson/.rvm/bin"
+export PATH="/Users/natedickson/bin/Sencha/Cmd/4.0.5.87:/Users/natedickson/tmux:/opt/local/bin:/opt/local/sbin:/Users/natedickson/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/Users/natedickson/bin/Sencha/Cmd/4.0.4.84::/Users/natedickson/.rvm/bin:/Users/natedickson/.rvm/bin"
 export MANPATH="/usr/local/man:$MANPATH"
 source $ZSH/oh-my-zsh.sh
 source ~/.alias
@@ -63,3 +62,5 @@ export M2_HOME=/usr/local/Cellar/maven/3.3.3/libexec
 export M2=$M2_HOME/bin
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
 export PATH=$PATH:$JAVA_HOME:$M2
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
