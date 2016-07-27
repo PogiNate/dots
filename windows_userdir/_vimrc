@@ -1,0 +1,56 @@
+set nocompatible
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+set nu
+let mapleader=","
+let maplocalleader="\\"
+
+"Theme Stuff
+set background=dark
+colorscheme jellybeans
+" Normal Mode
+nnoremap - ddp
+nnoremap _ ddkkp
+nnoremap <Leader>t :tabe<CR>
+nnoremap <Leader>g :Gstatus<CR>
+nnoremap <silent> <leader>s :<C-u>nohlsearch<CR>
+nnoremap <silent> <Leader>l :set cursorline! <CR>
+nnoremap <silent> <Leader>c :set cursorcolumn! <CR>
+nnoremap <silent> <leader>b :Gblame<CR>
+nnoremap <silent> <leader>sv :so $MYVIMRC<CR> :echom ".vimrc reloaded."<CR>
+nnoremap <silent> <leader>ev :split $MYVIMRC<CR>
+nnoremap <silent> <F5> :GundoToggle<CR>
+
+set encoding=utf-8
+set laststatus=2
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set wrap
+set linebreak
+set ttimeout
+set ttimeoutlen=10
+set showmode
+set shiftround
+set pastetoggle=<F2>
+let g:airline_powerline_fonts = 1
+augroup autoSave
+	autocmd!
+	autocmd CursorHold,BufLeave,FocusLost * silent! wall
+augroup END
+
+" NERDTree settings
+let NERDTreeHijackNetrw=1
+map <Leader>n :NERDTreeToggle<CR>
+nmap <Leader>mi :NERDTreeMirror<CR>
+
+
+"Insert mode
+inoremap jk <esc>
+
+"Persistent Undo Settings
+set undofile
+set undodir=$HOME/vimfiles/undofiles
+set undolevels=1000
+set undoreload=10000
