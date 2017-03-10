@@ -1,5 +1,4 @@
 set nocompatible "Use Vim as VIM, not as vi
-colorscheme jellybeans
 filetype plugin indent on
 set nu
 syntax on
@@ -99,3 +98,8 @@ set undofile
 set undodir=~/.vim/undofiles
 set undolevels=1000
 set undoreload=10000
+
+
+"color scheme. Moved to the end to be called 
+"After pathogen adds the colorschemes.
+colorscheme jelleybeans
