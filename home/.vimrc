@@ -92,6 +92,7 @@ nmap <Leader>mi :NERDTreeMirror<CR>
 
 "Pathogen
 execute pathogen#infect()
+execute pathogen#helptags()
 
 "Persistent undo settings
 set undofile
@@ -102,4 +103,4 @@ set undoreload=10000
 
 "color scheme. Moved to the end to be called 
 "After pathogen adds the colorschemes.
-colorscheme jelleybeans
+colorscheme jellybeans
