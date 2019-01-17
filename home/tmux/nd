@@ -1,3 +1,4 @@
+#! /usr/bin/env sh
 tmux has-session -t ND
 if [[ $? != 0 ]]
 then
