@@ -5,7 +5,7 @@ export ZSH=/Users/nate/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pure"
+ZSH_THEME="refined"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -54,6 +54,7 @@ plugins=(marked git tmux)
 # User configuration
 
 export PATH="/Users/natedickson/tmux:/opt/local/bin:/opt/local/sbin:/Users/natedickson/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin:/usr/local/share/npm/bin:/Users/natedickson/.rvm/bin:/Users/natedickson/.rvm/bin"
+export PATH=$HOME/.composer/vendor/bin:$PATH
 export MANPATH="/usr/local/man:$MANPATH"
 source $ZSH/oh-my-zsh.sh
 source ~/.alias
@@ -66,3 +67,6 @@ export PATH=$PATH:/users/nate/bin/
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.profile
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
