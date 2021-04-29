@@ -102,4 +102,4 @@ set undoreload=10000
 
 "color scheme. Moved to the end to be called 
 "After pathogen adds the colorschemes.
-colorscheme jelleybeans
+colorscheme jellybeans
