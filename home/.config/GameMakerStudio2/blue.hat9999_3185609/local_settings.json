@@ -1,0 +1,5 @@
+{
+    "machine.Object Editor.defaultcomment": "/// @description Insert description here\\n// You can write your code in this editor\\n",
+    "machine.Script Editor.defaultcomment": "// Script assets have changed for v2.3.0 see\\n// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information",
+    "cloud.Start Page.ShowTour": false
+}

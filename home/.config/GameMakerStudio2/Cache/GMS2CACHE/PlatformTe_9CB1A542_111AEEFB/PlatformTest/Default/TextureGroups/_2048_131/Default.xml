@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureGroup>
+  <texture scale="1" mipsToGenerate="0">Default_0.png</texture>
+  <texture scale="1" mipsToGenerate="0">Default_1.png</texture>
+  <tpe x="2" y="2" tpage="Default_0" entry="0">sBGHills_grass_abd95ca0-d5c5-471c-b0f4-d6fb71b50f81.tpe</tpe>
+  <tpe x="2" y="811" tpage="Default_0" entry="1">sBGHills_sand_351fa0df-2fe8-4c22-b538-1fb0000a336c.tpe</tpe>
+  <tpe x="0" y="2" tpage="Default_1" entry="2">sBGHills1_grass_a88521dd-d371-49e8-90ed-bf1fdf413e3e.tpe</tpe>
+  <tpe x="0" y="730" tpage="Default_1" entry="3">sBGHills1_sand_e133ca9c-b61d-4b6b-a43a-77bc7fc709ee.tpe</tpe>
+  <tpe x="1032" y="4" tpage="Default_0" entry="4">tGrass_output_tileset.tpe</tpe>
+  <tpe x="1032" y="692" tpage="Default_0" entry="5">tSand_output_tileset.tpe</tpe>
+  <tpe x="2" y="1620" tpage="Default_0" entry="6">sMoon_4e304ba9-33ad-4b42-8f35-a07266674ca8.tpe</tpe>
+  <tpe x="1030" y="1378" tpage="Default_0" entry="7">sCloud_grass_7572d465-61cb-4591-b04e-24e9f71fcf4f.tpe</tpe>
+  <tpe x="433" y="1620" tpage="Default_0" entry="8">sCloud1_grass_58bdf00c-3a82-4107-b80b-b6d9bba492ec.tpe</tpe>
+  <tpe x="1148" y="1607" tpage="Default_0" entry="9">fTahoma24_fTahoma24.tpe</tpe>
+  <tpe x="2" y="1458" tpage="Default_1" entry="10">sCloud1_sand_fd54f806-9a0f-4664-a22d-de25f1e8957a.tpe</tpe>
+  <tpe x="2" y="1664" tpage="Default_1" entry="11">sCloud_sand_d95442a7-e4d1-4531-92ba-65deb11148c0.tpe</tpe>
+  <tpe x="1514" y="1609" tpage="Default_0" entry="12">tCollision_output_tileset.tpe</tpe>
+  <tpe x="433" y="1849" tpage="Default_0" entry="13">sJumpFall_c6aadfec-92db-4867-b079-2e942a50324f.tpe</tpe>
+  <tpe x="1650" y="2" tpage="Default_0" entry="14">sJump_bbaaf8e6-cd46-4576-9aea-6a80efbd667b.tpe</tpe>
+  <tpe x="1512" y="1751" tpage="Default_0" entry="15">sWalk_b96aff21-4590-4df4-9f95-c8fa5e51a5f6.tpe</tpe>
+  <tpe x="536" y="1849" tpage="Default_0" entry="16">sWalk_3b2b348b-6ace-410f-9baf-da67940c0d43.tpe</tpe>
+  <tpe x="1650" y="129" tpage="Default_0" entry="17">sWalk_dd2aa6fb-634d-4357-93f6-b598ade43fe5.tpe</tpe>
+  <tpe x="1656" y="1607" tpage="Default_0" entry="18">sWalk_dd87f98b-ceea-4a0f-ab6c-7cdc1268cd65.tpe</tpe>
+  <tpe x="1603" y="1751" tpage="Default_0" entry="19">sFall_93e090f3-929d-4b98-a443-11aa15924154.tpe</tpe>
+  <tpe x="627" y="1849" tpage="Default_0" entry="20">sIdle1_48314468-c09f-4ad3-aa9a-7bb5fd585dc9.tpe</tpe>
+  <tpe x="1650" y="253" tpage="Default_0" entry="21">sIdle1_5e92c1db-ba3b-4468-aaf2-c90246fbe13c.tpe</tpe>
+  <tpe x="627" y="1849" tpage="Default_0" entry="22">sIdle1_6606e9aa-aa04-4201-b286-9357c2a2e18d.tpe</tpe>
+  <tpe x="1650" y="253" tpage="Default_0" entry="23">sIdle1_7b1f6914-b3e4-43c4-b184-e8517e47f01c.tpe</tpe>
+  <tpe x="1512" y="1878" tpage="Default_0" entry="24">sIdle2_3c7e0333-72aa-4c2c-b880-aeb3a92c6e56.tpe</tpe>
+  <tpe x="627" y="1849" tpage="Default_0" entry="25">sIdle2_7cbc75ac-dd5f-40ff-a14a-c912b6409a0c.tpe</tpe>
+  <tpe x="1650" y="253" tpage="Default_0" entry="26">sIdle2_e2df41d9-ebd1-403e-b273-429048a5c919.tpe</tpe>
+  <tpe x="1603" y="1872" tpage="Default_0" entry="27">sIdle2_f5485aa6-2028-47a7-92a6-86280e8be586.tpe</tpe>
+  <tpe x="704" y="1849" tpage="Default_0" entry="28">sIdle1_1b8bdba5-1564-4bad-9c77-4a31521f77bf.tpe</tpe>
+  <tpe x="704" y="1849" tpage="Default_0" entry="29">sIdle1_9a838347-b84d-4092-8917-0135ed540518.tpe</tpe>
+  <tpe x="704" y="1849" tpage="Default_0" entry="30">sIdle2_e0e46654-ba97-4372-a0c5-23f2c8dcfddb.tpe</tpe>
+  <tpe x="704" y="1849" tpage="Default_0" entry="31">sIdle2_fed1a429-d89e-47c4-854a-f7f36516ca75.tpe</tpe>
+  <tpe x="1650" y="380" tpage="Default_0" entry="32">sIdle1_b995d745-5d31-4007-8142-22d724e6901c.tpe</tpe>
+  <tpe x="1650" y="380" tpage="Default_0" entry="33">sIdle2_626feadf-8481-4e03-b398-d326c61f6c68.tpe</tpe>
+  <tpe x="781" y="1849" tpage="Default_0" entry="34">sWalk_fcaff2c8-66c7-49a4-b420-63561bc15695.tpe</tpe>
+  <tpe x="1650" y="505" tpage="Default_0" entry="35">sWalk_b12c12c6-5130-4267-bdfb-6c79c31897ac.tpe</tpe>
+  <tpe x="1680" y="1872" tpage="Default_0" entry="36">sClimb_05b8a9a1-dbc8-49a5-be48-949b96a758ea.tpe</tpe>
+  <tpe x="851" y="1849" tpage="Default_0" entry="37">sClimb_1817c50e-faec-4cae-b40c-9b5c64e827d7.tpe</tpe>
+  <tpe x="1650" y="631" tpage="Default_0" entry="38">sWalk_9253ebeb-8b06-4ce3-a91e-bdd9a0ac62e1.tpe</tpe>
+  <tpe x="915" y="1849" tpage="Default_0" entry="39">sClimb_102abc64-967f-42ef-920e-928b03f11e88.tpe</tpe>
+  <tpe x="915" y="1849" tpage="Default_0" entry="40">sClimb_cadd5066-96ce-421d-9eac-a44bb937e6d4.tpe</tpe>
+  <tpe x="1685" y="1734" tpage="Default_0" entry="41">sWalk_a250833d-7747-425d-9054-706d927d8d41.tpe</tpe>
+  <tpe x="433" y="1970" tpage="Default_0" entry="42">sPickupStar_e54cc4cc-07e4-406d-953f-cc95a3dc308e.tpe</tpe>
+  <tpe x="704" y="1975" tpage="Default_0" entry="43">sGhost_26a3dd91-6cdd-467f-887f-86c896a472c8.tpe</tpe>
+  <tpe x="851" y="1974" tpage="Default_0" entry="44">sGhost_c48dfb5b-4816-4395-ab1c-23638b8a05f4.tpe</tpe>
+  <tpe x="1589" y="1999" tpage="Default_0" entry="45">sHeart_7c20bf2d-d8f2-4e18-a5d6-3689e7e51476.tpe</tpe>
+  <tpe x="1727" y="253" tpage="Default_0" entry="46">sBGGrad_grass_7a0e0fa6-b77c-4049-af61-99ff9acb5eb0.tpe</tpe>
+  <tpe x="1732" y="253" tpage="Default_0" entry="47">sBGGrad_sand_4bf3d577-0dc9-41c4-9183-b480d271b296.tpe</tpe>
+  <tpe x="1680" y="1997" tpage="Default_0" entry="48">sStar_grass_d873e502-3ef5-4b35-b3cc-01375692ab20.tpe</tpe>
+  <tpe x="982" y="1849" tpage="Default_0" entry="49">sStar_sand_5de60b13-2068-419f-a48d-d3c39e9d2dd5.tpe</tpe>
+  <tpe x="1030" y="1607" tpage="Default_0" entry="50">sGhostShadow_1fb176a7-f22d-4e09-b188-2ef57219584e.tpe</tpe>
+</TextureGroup>

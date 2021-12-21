@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ActiveConfig="Default" Platform="operagx" Runtime="VM" Device="Default">
+	<Desktop x="0" y="53" width="1920" height="942" id="19" title="Gonk - GameMaker Studio 2" windowState="Maximized">
+		<Workspaces>
+			<Workspace active="True" chain="True" title="Workspace 1" localise_title="Workspace_TabTitle" localise_arguments="[&#xA;    &quot;1&quot;&#xA;]" workspace_offset="[0, 0]" workspace_scale="1" />
+		</Workspaces>
+		<Dock state="Expanded" type="eRight" restore_size="305dpi_px" active_tab="0">
+			<DockTab localise_title="ResourceTree_Title" cell_sizes="[881,118]" layout_id="dock_tab_1" layout_guid="73d1d405-9a6a-4248-ab75-bd19f9397e96">
+				<Module Command="open_asset_browser">
+					<AssetBrowser sort="AtoZ" foldersFirst="True" zoom="100">
+						<Window left="" right="" top="" bottom="" width="370dpi_px" height="463dpi_px" flags="Default" title="Asset Browser" localise_title="AssetBrowser_Title" />
+					</AssetBrowser>
+				</Module>
+				<Module Command="open_recent_windows">
+					<RecentWindowsWindow left="" right="" top="" bottom="" width="400dpi_px" height="99.99999dpi_px" flags="Default" title="Recent Windows" localise_title="recentwindows_title" />
+				</Module>
+			</DockTab>
+		</Dock>
+		<Dock state="Collapsed" type="eBottom" restore_size="186.7826dpi_px" active_tab="0">
+			<DockTab localise_title="OutputPanel_Output" cell_sizes="[1000]" layout_id="dock_tab_1" layout_guid="89f2a502-a7fc-4f49-aa76-22fa745e14b2">
+				<Module Command="open_output_panel">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Output" localise_title="OutputPanel_Title" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="OutputPanel_SearchResults" cell_sizes="[1000]" layout_id="dock_tab_2" layout_guid="35e86d87-23bc-4a3d-80c1-ad7129243746">
+				<Module Command="open_search_output_panel">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Search Results" localise_title="OutputPanel_SearchResults" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="OutputPanel_SourceControl" cell_sizes="[1000]" layout_id="dock_tab_3" layout_guid="48bafef1-9c50-4754-81f2-6c62daef3560">
+				<Module Command="open_sc_output_panel">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Source Control" localise_title="OutputPanel_SourceControl" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="Breakpoints" cell_sizes="[1000]" layout_id="dock_tab_4" layout_guid="c522614a-5ac6-47fa-837b-88cb5bbe3adb">
+				<Module Command="open_breakpoint_mgr">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Breakpoints" localise_title="Breakpoints" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="CompileErrors" cell_sizes="[1000]" layout_id="dock_tab_5" layout_guid="680b4491-3852-429b-81cd-0cd1b5447bf9">
+				<Module Command="show_compile_errors">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Compile Errors" localise_title="CompileErrors" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="SyntaxErrors" cell_sizes="[1000]" layout_id="dock_tab_6" layout_guid="4c4e6913-1287-4077-8261-ea26d5669ba4">
+				<Module Command="show_syntax_errors">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Syntax Errors" localise_title="SyntaxErrors" />
+				</Module>
+			</DockTab>
+		</Dock>
+	</Desktop>
+</Project>

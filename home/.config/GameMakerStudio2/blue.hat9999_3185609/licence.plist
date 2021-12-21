@@ -1,0 +1,28 @@
+<plist version="1.0">
+<dict>
+	<key>Signature</key>
+	<data>
+	O4aIYTXOV6DxhPhISgww5E0aG51MTR3PyQLdQr4K9rMReZoilPKaBK9SaVTgxCNgBVUG
+	eXp89Hm4OAPHMNpJCkACHIRW/2l8gGVw1jJmV5ILvBUDb3Ba33vhmUsL8Zdm7FX3oJ6W
+	UbYLlYBhBBCX456vtJp6CP3scae2cvK1Pv4=
+	</data>
+	<key>answer</key>
+	<string>381511233_1F7BA87D45558563CC7EB3448CDBAB98</string>
+	<key>components</key>
+	<string>Windows;Mac;Linux;Windows.build_module;Mac.build_module;Linux.build_module;beta23;operagx;operagx.build_module;ff_e_filt+fx</string>
+	<key>device_id</key>
+	<string>00FE1BA57398C1C2DB27F4A254AA134B</string>
+	<key>email</key>
+	<string>blue.hat9999@fastmail.com</string>
+	<key>id</key>
+	<string>3185609</string>
+	<key>name</key>
+	<string>blue.hat9999@fastmail.com</string>
+	<key>resource_limits</key>
+	<string>H4sIAAAAAAAEAGWPQYvCQAyFzxb8D9LzHtwFL97EVdnTFqfgeWyjRtvJkKYgiv/d6VRslj2+Ly8vL/dxMkqNZxRIJ/PJ1/SjAzlW0IA0EUViqHVl1J+9JbNyinrWzwtGL9pgTrYEjqQHa3KiNnKsoUIH6sjv/gzFK6Q3bYnqJh29l76t2ENXbohdXQVcg+QUW5I74FGBHK7SMmT2CAZvMAwyW1wCXDJYCRnDIDzMBYQgYaoG/FN7YtHX/2qzWyvhw3//SmyYWq+6LdoSScFx8ngC2rrfEpYBAAA=</string>
+	<key>status</key>
+	<string>success</string>
+	<key>token</key>
+	<string>a2862b9251b9683d766385e3307a0c60</string>
+</dict>
+</plist>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ActiveConfig="Default" Platform="Mac" Runtime="VM" Device="Default">
+	<Desktop x="0" y="53" width="1920" height="942" id="19" title="PlatformTest - GameMaker Studio 2" windowState="Maximized">
+		<Workspaces>
+			<Workspace active="False" chain="True" title="Workspace 1" localise_title="Workspace_TabTitle" localise_arguments="[&#xA;    &quot;1&quot;&#xA;]" workspace_offset="[0, 0]" workspace_scale="1" />
+			<Workspace active="True" chain="False" title="rGrass" localise_title="" workspace_offset="[0, 0]" workspace_scale="1">
+				<Module Command="open_room_editor" WorkspaceOwner="true">
+					<Room id="rGrass">
+						<RoomEditArea>
+							<PanArea zoom="0.3204739" pan="[-9.268711, -387]" />
+							<Properties />
+							<Selected>
+								<Layer GUID="Player" />
+							</Selected>
+						</RoomEditArea>
+					</Room>
+				</Module>
+			</Workspace>
+		</Workspaces>
+		<Dock state="Expanded" type="eLeft" restore_size="315dpi_px" active_tab="0">
+			<DockTab localise_title="RoomEditor_DockTab" cell_sizes="[452,272,274]" layout_id="room_editor_tab" layout_guid="2c1f5101-599a-4089-a23a-49c80e1a3b2d" />
+		</Dock>
+		<Dock state="Expanded" type="eRight" restore_size="305dpi_px" active_tab="0">
+			<DockTab localise_title="ResourceTree_Title" cell_sizes="[881,118]" layout_id="dock_tab_1" layout_guid="0f2f4529-c3a7-484c-b2d8-8bdb95f19730">
+				<Module Command="open_asset_browser">
+					<AssetBrowser sort="Custom" foldersFirst="True" zoom="100">
+						<Window left="" right="" top="" bottom="" width="370dpi_px" height="463dpi_px" flags="Default" title="Asset Browser" localise_title="AssetBrowser_Title" />
+					</AssetBrowser>
+				</Module>
+				<Module Command="open_recent_windows">
+					<RecentWindowsWindow left="" right="" top="" bottom="" width="400dpi_px" height="99.99999dpi_px" flags="Default" title="Recent Windows" localise_title="recentwindows_title" />
+				</Module>
+			</DockTab>
+		</Dock>
+		<Dock state="Expanded" type="eBottom" restore_size="284.6911dpi_px" active_tab="0">
+			<DockTab localise_title="OutputPanel_Output" cell_sizes="[1000]" layout_id="dock_tab_1" layout_guid="224434d5-fc66-4a64-8973-7d7007b08519">
+				<Module Command="open_output_panel">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Output" localise_title="OutputPanel_Title" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="OutputPanel_SearchResults" cell_sizes="[1000]" layout_id="dock_tab_2" layout_guid="3b0b5ca8-5306-42c0-880c-a723d7712c1f">
+				<Module Command="open_search_output_panel">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Search Results" localise_title="OutputPanel_SearchResults" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="OutputPanel_SourceControl" cell_sizes="[1000]" layout_id="dock_tab_3" layout_guid="6fe71364-fbf2-462b-a3c3-69d997519cd0">
+				<Module Command="open_sc_output_panel">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Source Control" localise_title="OutputPanel_SourceControl" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="Breakpoints" cell_sizes="[1000]" layout_id="dock_tab_4" layout_guid="2924057e-fc7c-491e-b559-ba8d75b6b7cb">
+				<Module Command="open_breakpoint_mgr">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Breakpoints" localise_title="Breakpoints" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="CompileErrors" cell_sizes="[1000]" layout_id="dock_tab_5" layout_guid="ae0b4694-6ded-4907-9c43-9be33bfe234c">
+				<Module Command="show_compile_errors">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Compile Errors" localise_title="CompileErrors" />
+				</Module>
+			</DockTab>
+			<DockTab localise_title="SyntaxErrors" cell_sizes="[1000]" layout_id="dock_tab_6" layout_guid="f0252acf-1b0c-4926-85d5-a608a5f7b348">
+				<Module Command="show_syntax_errors">
+					<Window left="0px" right="" top="0px" bottom="" width="900px" height="240px" flags="Default" title="Syntax Errors" localise_title="SyntaxErrors" />
+				</Module>
+			</DockTab>
+		</Dock>
+	</Desktop>
+	<Modules>
+		<YoYoStudio.Plugins.CorePlugins.RoomEditorModule>
+			<RoomEditor>
+				<LayerProperties left="20dpi_px" right="" top="" bottom="350dpi_px" width="260dpi_px" height="330dpi_px" flags="Default" title="Player Layer Properties - rGrass" localise_title="RoomEditor_LayerProperties" dock_type="eLeft" dock_tab_index="0" dock_list_index="1" dock_proportion="0.8187245" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="2c1f5101-599a-4089-a23a-49c80e1a3b2d" desktop="19" />
+				<Layers left="340dpi_px" right="" top="" bottom="270dpi_px" width="320dpi_px" height="250dpi_px" flags="CloseButton, MinimizeButton, ResizeButton" title="Layers - rGrass" localise_title="RoomEditor_Layers" dock_type="eLeft" dock_tab_index="0" dock_list_index="0" dock_proportion="1.357477" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="2c1f5101-599a-4089-a23a-49c80e1a3b2d" desktop="19" />
+				<RoomProperties left="10dpi_px" right="" top="125dpi_px" bottom="" width="300dpi_px" height="240dpi_px" flags="Default" title="Properties - rGrass" localise_title="RoomEditor_RoomProperties" dock_type="eLeft" dock_tab_index="0" dock_list_index="2" dock_proportion="0.8237987" dock_tab_name="Room Editor" dock_tab_localise_name="RoomEditor_DockTab" dock_tab_id="room_editor_tab" dock_tab_guid="2c1f5101-599a-4089-a23a-49c80e1a3b2d" desktop="19" />
+			</RoomEditor>
+		</YoYoStudio.Plugins.CorePlugins.RoomEditorModule>
+	</Modules>
+</Project>
