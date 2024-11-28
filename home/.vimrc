@@ -59,16 +59,6 @@ nnoremap <silent> <leader>sw :%s/\s\+$//<CR>
 inoremap <c-u> <esc>viwUi
 inoremap jk <esc>
 
-"Tabularize Shortcuts
-if exists(":Tabularize")
-nnoremap <leader>a= :Tabularize /=<CR>
-vnoremap <leader>a= :Tabularize /=<CR>
-nnoremap <leader>a: :Tabularize /:<CR>
-vnoremap <leader>a: :Tabularize /:<CR>
-vnoremap <leader>at :Tabularize /\|<CR>
-nnoremap <leader>at :Tabularize /\|<CR>
-endif
-
 "Folding
 set foldmethod=manual
 set foldlevel=1
@@ -81,9 +71,6 @@ set laststatus=2
 set backspace=2
 set backspace=indent,eol,start
 
-"Wildignore stuff
-
-set wildignore=node_modules/*
 "NERDTree Settings
 let NERDTreeHijackNetrw=1
 map <Leader>n  :NERDTreeToggle<CR>
